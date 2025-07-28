@@ -1186,7 +1186,7 @@
                                  equipment.type === 'grenade' ? 'רימון' :
                                  equipment.type === 'custom' ? 'אחר' :
                                  equipment.type.charAt(0).toUpperCase() + equipment.type.slice(1);
-                message = `שלום ${soldierName},\n\nזוהי תזכורת להחזיר:\n${typeLabel}: ${equipment.name}\nמספר סידורי: ${equipment.serialNumber}\nתאריך קבלה: ${equipment.dateAssigned}\n\nנא להחזיר בהקדם.\nתודה!`;
+                message = `שלום ${soldierName},\n\nזוהי תזכורת שיש ברשותך:\n${typeLabel}: ${equipment.name}\nמספר סידורי: ${equipment.serialNumber}\nתאריך קבלה: ${equipment.dateAssigned}\n\nנא לבדוק שהוא שהציוד עדיין ברשותך.\nמחלקה 2,תודה`;
             } else {
                 // General message for all equipment
                 const issuedItems = soldier.equipment.filter(e => e.status === 'issued');
